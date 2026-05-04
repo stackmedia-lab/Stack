@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 30 20% 98%;
+  --foreground: 220 13% 9%;
+  --card: 0 0% 100%;
+  --muted: 30 15% 94%;
+  --line: 30 10% 88%;
+  --subtle: 220 8% 46%;
+  --success: 142 70% 35%;
+}
+
+html, body { background: hsl(var(--background)); color: hsl(var(--foreground)); }
+body { font-family: var(--font-sans), system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+.font-display { font-family: var(--font-display), serif; letter-spacing: -0.02em; }
+.pill-shadow { box-shadow: 0 10px 40px -10px rgba(0,0,0,0.12); }
+.text-subtle { color: hsl(var(--subtle)); }
+.text-success { color: hsl(var(--success)); }
+.bg-card { background: hsl(var(--card)); }
+.bg-muted { background: hsl(var(--muted)); }
+.border-line { border-color: hsl(var(--line)); }
+
+::selection { background: hsl(var(--foreground)); color: hsl(var(--background)); }
